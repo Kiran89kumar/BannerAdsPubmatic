@@ -235,8 +235,8 @@
     <!-- From: file:/home/kiran.kumar/Android/Code/Reference/Reference%20Code/Ads/DFP%20Banner/BannerAdsPubmatic/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
-    <string name="ad_unit_id">/6253334/dfp_example_ad</string>
-    <string name="app_name">BannerExample</string>
+    <string name="ad_unit_id">/1024780/cbz_320x50_android_gallery</string>
+    <string name="app_name">DFP Pubmatic Ads</string>
     <!-- From: file:/home/kiran.kumar/Android/Code/Reference/Reference%20Code/Ads/DFP%20Banner/BannerAdsPubmatic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values/auth_strings.xml -->
     <eat-comment/>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
@@ -280,7 +280,7 @@
     <string name="decline">Decline</string>
     <!-- From: file:/home/kiran.kumar/Android/Code/Reference/Reference%20Code/Ads/DFP%20Banner/BannerAdsPubmatic/app/src/main/res/values/strings.xml -->
     <eat-comment/>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">Banner Ad Loader</string>
     <!-- From: file:/home/kiran.kumar/Android/Code/Reference/Reference%20Code/Ads/DFP%20Banner/BannerAdsPubmatic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>

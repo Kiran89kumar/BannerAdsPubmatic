@@ -15,11 +15,18 @@
  */
 package com.google.android.gms.example.bannerexample;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.doubleclick.PublisherAdRequest;
 import com.google.android.gms.ads.doubleclick.PublisherAdView;
 
@@ -29,23 +36,62 @@ import com.google.android.gms.ads.doubleclick.PublisherAdView;
 public class MyActivity extends AppCompatActivity {
 
     private PublisherAdView mAdView;
-
+    private LinearLayout adsView;
+    private Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
+        context = this;
+        adsView = (LinearLayout) findViewById(R.id.ads);
+        loadDFPBannerAd(AD_UNIT);
+        ((Button)findViewById(R.id.button)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadDFPBannerAd(AD_UNIT);
+            }
+        });
+    }
 
-        // Gets the ad view defined in layout/ad_fragment.xml with ad unit ID set in
-        // values/strings.xml.
-        mAdView = (PublisherAdView) findViewById(R.id.ad_view);
 
-        // Create an ad request. Check logcat output for the hashed device ID to
-        // get test ads on a physical device. e.g.
-        // "Use AdRequest.Builder.addTestDevice("ABCDEF012345") to get test ads on this device."
-        PublisherAdRequest adRequest = new PublisherAdRequest.Builder().build();
+    private void loadDFPBannerAd(String adUnitID) {
+        try {
 
-        // Start loading the ad in the background.
-        mAdView.loadAd(adRequest);
+            adsView.removeAllViews(); //Removing already added view
+
+            mAdView = new PublisherAdView(this);
+            mAdView.setAdUnitId(adUnitID);
+            mAdView.setAdSizes(AdSize.BANNER.BANNER);
+
+            mAdView.setAdListener(new AdListener() {
+                @Override
+                public void onAdFailedToLoad(int errorCode) {
+                    super.onAdFailedToLoad(errorCode);
+                    //todo logic for reload next ad.
+                    Toast.makeText(context, "Ad Failed Errocode:"+errorCode, Toast.LENGTH_LONG).show();
+                }
+
+                @Override
+                public void onAdLoaded() {
+                    super.onAdLoaded();
+                    Toast.makeText(context, "Ad success:", Toast.LENGTH_LONG).show();
+                    adsView.setVisibility(View.VISIBLE);
+                }
+            });
+
+            //adsView is layout for displaying ad. It can be Linearlayout in XML
+            adsView.addView(mAdView);
+            //todo Content URL call.
+            //String contentUrl = getContentUrl();
+            //Log.d("MainActivity", "DFP content URL:" + contentUrl);
+            //publisherAdView.loadAd(new PublisherAdRequest.Builder().setContentUrl(contentUrl).build());
+
+            //Loading banner Ad without Content url
+            mAdView.loadAd(new PublisherAdRequest.Builder().build());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -91,6 +137,9 @@ public class MyActivity extends AppCompatActivity {
         if (mAdView != null) {
             mAdView.destroy();
         }
+        ((Button)findViewById(R.id.button)).setOnClickListener(null);
         super.onDestroy();
     }
+
+    private final static String AD_UNIT = "/1024780/cbz_320x50_android_gallery";
 }

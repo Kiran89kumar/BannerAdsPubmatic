@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/kiran.kumar/Android/Code/Reference/Reference Code/Ads/DFP Banner/BannerAdsPubmatic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="/home/kiran.kumar/Android/Code/Reference/Reference Code/Ads/DFP Banner/BannerAdsPubmatic/app/build/intermediates/pre-dexed/debug/classes-974eb24a4602a872bd111d14a375b5a0b4283591.jar" />
+    </item>
+    <item
+        jar="/home/kiran.kumar/Android/Code/Reference/Reference Code/Ads/DFP Banner/BannerAdsPubmatic/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/home/kiran.kumar/Android/Code/Reference/Reference Code/Ads/DFP Banner/BannerAdsPubmatic/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-f89b815f69ef2dead588fc8216750715c555f959.jar" />
+    </item>
+    <item
+        jar="/home/kiran.kumar/Android/Code/Reference/Reference Code/Ads/DFP Banner/BannerAdsPubmatic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="/home/kiran.kumar/Android/Code/Reference/Reference Code/Ads/DFP Banner/BannerAdsPubmatic/app/build/intermediates/pre-dexed/debug/classes-2243ad679da9ee5432d96d275f03391912c0a46b.jar" />
+    </item>
+    <item
+        jar="/home/kiran.kumar/Android/Code/Reference/Reference Code/Ads/DFP Banner/BannerAdsPubmatic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="997773777cf3904c11d6764fe3b7668538220e49">
+        <dex dex="/home/kiran.kumar/Android/Code/Reference/Reference Code/Ads/DFP Banner/BannerAdsPubmatic/app/build/intermediates/pre-dexed/debug/classes-67f824a1a5fdb8f1df9c697562f40548b1f6352a.jar" />
+    </item>
+    <item
+        jar="/home/kiran.kumar/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/home/kiran.kumar/Android/Code/Reference/Reference Code/Ads/DFP Banner/BannerAdsPubmatic/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-4ec9f035ba6a087e39fe909a0840aa8527a357fa.jar" />
+    </item>
+    <item
+        jar="/home/kiran.kumar/Android/Code/Reference/Reference Code/Ads/DFP Banner/BannerAdsPubmatic/app/build/intermediates/exploded-aar/BannerAdsPubmatic/mastadview/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="99e1f32b0f239d3753c050571d828df56a548173">
+        <dex dex="/home/kiran.kumar/Android/Code/Reference/Reference Code/Ads/DFP Banner/BannerAdsPubmatic/app/build/intermediates/pre-dexed/debug/classes-e66455eab63fb78b0ff32a3b3ea53e09010d61e6.jar" />
+    </item>
+    <item
+        jar="/home/kiran.kumar/Android/Code/Reference/Reference Code/Ads/DFP Banner/BannerAdsPubmatic/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/home/kiran.kumar/Android/Code/Reference/Reference Code/Ads/DFP Banner/BannerAdsPubmatic/app/build/intermediates/pre-dexed/debug/classes-d5827e84a1272f540e63096cc2787abc24968c82.jar" />
+    </item>
+    <item
+        jar="/home/kiran.kumar/Android/Code/Reference/Reference Code/Ads/DFP Banner/BannerAdsPubmatic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/home/kiran.kumar/Android/Code/Reference/Reference Code/Ads/DFP Banner/BannerAdsPubmatic/app/build/intermediates/pre-dexed/debug/classes-b02afbdc864fd8fd255604d4d5a545c1fed0af93.jar" />
+    </item>
+
+</items>
