@@ -141,5 +141,5 @@ public class MyActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
-    private final static String AD_UNIT = "/1024780/cbz_320x50_android_gallery";
+    private final static String AD_UNIT = "/1024780/320x50_PubMatic_Testing";
 }

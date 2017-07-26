@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.google.android.gms.example.bannerexample"
@@ -23,5 +23,9 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:23.0.1'
     compile 'com.google.android.gms:play-services-ads:8.1.0'
+
+    compile 'com.github.PubMatic.pubmatic-sdk-android:common-sdk:5.2.0'
+    compile 'com.github.PubMatic.pubmatic-sdk-android:banner-sdk:5.2.0'
+    compile 'com.github.PubMatic.pubmatic-sdk-android:native-sdk:5.2.0'
     compile project(':mastadview')
 }
